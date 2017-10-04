@@ -2,26 +2,27 @@ package fr.wcs.blablacrade;
 
 import java.util.Date;
 
-/**
- * Created by wilder on 13/09/17.
- */
-
 public class TripResultModel {
 
-    public Date getDepare() {
-        return depare;
+    private String prenom;
+    private int prix;
+    private Date date;
+
+    public TripResultModel(String prenom, Date date, int prix) {
+        this.prenom = prenom;
+        this.date = date;
+        this.prix = prix;
     }
 
-    public int getPri() {
-        return pri;
+    public String getPrenom() {
+        return prenom;
     }
-    private String prénom;
-    private int pri;
 
-    public TripResultModel(String prénom, Date depare, int pri) {
-        this.prénom = prénom;this.depare = depare;this.pri = pri;
+    public Date getDate() {
+        return date;
     }
-    private Date depare;
 
-    public String getPrénom() {return prénom;}
+    public int getPrix() {
+        return prix;
+    }
 }

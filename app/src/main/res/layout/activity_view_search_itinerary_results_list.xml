@@ -5,5 +5,4 @@
     android:layout_height="match_parent"
     android:id="@+id/listViewSearchResults"
     tools:context="fr.wcs.blablacrade.ViewSearchItineraryResultsListActivity">
-
 </ListView>

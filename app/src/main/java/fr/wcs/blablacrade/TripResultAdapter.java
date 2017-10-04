@@ -9,16 +9,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by wilder on 13/09/17.
- */
-
-// This is the adapter lol
 public class TripResultAdapter extends BaseAdapter {
-    private Context context; //context
-    private ArrayList<TripResultModel> items; //data source of the list adapter
+    private Context context;
+    private ArrayList<TripResultModel> items;
 
-    //public constructor 
     public TripResultAdapter(Context context, ArrayList<TripResultModel> items) {
         this.context = context;
         this.items = items;
@@ -59,9 +53,9 @@ public class TripResultAdapter extends BaseAdapter {
                 convertView.findViewById(R.id.txt);
 
         //sets the text for item name and item description from the current item object
-        departure.setText(currentItem.getDepare().toString());
-        firstname.setText(currentItem.getPrénom());
-        price.setText(String.valueOf(currentItem.getPri()));
+        departure.setText(currentItem.getDate().toString());
+        firstname.setText(currentItem.getPrenom());
+        price.setText(String.valueOf(currentItem.getPrix()));
 
         // returns the view for the current row
         return convertView;
