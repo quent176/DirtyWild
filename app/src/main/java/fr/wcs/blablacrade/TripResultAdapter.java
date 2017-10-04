@@ -13,6 +13,7 @@ import java.util.ArrayList;
  * Created by wilder on 13/09/17.
  */
 
+// This is the adapter lol
 public class TripResultAdapter extends BaseAdapter {
     private Context context; //context
     private ArrayList<TripResultModel> items; //data source of the list adapter

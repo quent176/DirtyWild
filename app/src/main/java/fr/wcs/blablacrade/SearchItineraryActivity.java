@@ -26,6 +26,7 @@ public class SearchItineraryActivity extends AppCompatActivity {
         final EditText edit3 = (EditText) findViewById(R.id.editText3);
         Button buttonSearch = (Button) findViewById(R.id.push);
 
+        // clicq action
         buttonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

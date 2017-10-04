@@ -27,11 +27,11 @@ public class SearchRequestModel implements Parcelable {
         this.quan = quan;
     }
 
-    protected SearchRequestModel(Parcel in) {
-        depare = in.readString();
-        oùilva = in.readString();
-        quan = in.readString();
-    }
+        protected SearchRequestModel(Parcel in) {
+            depare = in.readString();
+            oùilva = in.readString();
+            quan = in.readString();
+        }
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
@@ -46,8 +46,8 @@ public class SearchRequestModel implements Parcelable {
     }
 
     public static final Creator<SearchRequestModel> CREATOR = new Creator<SearchRequestModel>() {
-        @Override
-        public SearchRequestModel createFromParcel(Parcel in) {
+                @Override
+                public SearchRequestModel createFromParcel(Parcel in) {
             return new SearchRequestModel(in);
         }
 

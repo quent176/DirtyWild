@@ -25,6 +25,7 @@ public class ViewSearchItineraryResultsListActivity extends AppCompatActivity {
 
         setTitle(text1 + " >> " + TEXTEDEUX);
 
+        // TODO : add résult to tableau
             ListView résultat = (ListView) findViewById(R.id.listViewSearchResults);
             ArrayList<TripResultModel> tableau = new ArrayList<>();SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy-hh:mm");
             try {
